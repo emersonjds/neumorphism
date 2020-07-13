@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, View, StyleSheet} from 'react-native';
+import {View, StyleSheet, Slider} from 'react-native';
 import {
   Container,
   SafeArea,
@@ -7,6 +7,15 @@ import {
   TopContainer,
   TopShadow,
   BottomShadow,
+  TextPlaying,
+  SongArtContainer,
+  SongArt,
+  SongContainer,
+  SongtextAuthor,
+  SongTextMusic,
+  TrackContainer,
+  TrackTimer,
+  TextTime,
 } from './styles';
 import Icon from 'react-native-vector-icons/AntDesign';
 Icon.loadFont();
@@ -40,17 +49,32 @@ export default function Home() {
       <SafeArea>
         <ContainerSpacing>
           <TopContainer>
-            <NeuMorph>
+            <NeuMorph size={48}>
               <Icon name="arrowleft" size={20} color={gray} />
             </NeuMorph>
 
             <View>
-              <Text> PLAYING NOW</Text>
+              <TextPlaying>PLAYING NOW</TextPlaying>
             </View>
-            <NeuMorph>
+            <NeuMorph size={48}>
               <Icon name="bars" size={20} color={gray} />
             </NeuMorph>
           </TopContainer>
+          <SongArtContainer>
+            <NeuMorph size={300}>
+              <SongArt source={require('./../../assets/img/linkin.jpg')} />
+            </NeuMorph>
+          </SongArtContainer>
+          <SongContainer>
+            <SongtextAuthor>Linkin Park</SongtextAuthor>
+            <SongTextMusic>NUMB</SongTextMusic>
+          </SongContainer>
+          <TrackContainer>
+            <TrackTimer>
+              <TextTime>1:21</TextTime>
+              <TextTime>4:02 </TextTime>
+            </TrackTimer>
+          </TrackContainer>
         </ContainerSpacing>
       </SafeArea>
     </Container>
