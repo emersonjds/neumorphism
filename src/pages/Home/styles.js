@@ -17,25 +17,6 @@ export const TopContainer = styled.View`
   align-items: center;
 `;
 
-export const TopShadow = styled.View`
-  shadow-offset: {
-    width: -6px;
-    height: -6px;
-  }
-  shadow-opacity: 1px;
-  shadow-radius: 6px;
-  shadow-color: #fbffff;
-`;
-export const BottomShadow = styled.View`
-  shadow-offset: {
-    width: 6px;
-    height: 6px;
-  }
-  shadow-opacity: 1px;
-  shadow-radius: 6px;
-  shadow-color: #b7c4dd;
-`;
-
 export const TextPlaying = styled.Text`
   color: gray;
   font-weight: 800;

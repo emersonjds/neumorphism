@@ -28,8 +28,8 @@ const gray = '#91A18D';
 export default function Home() {
   const NeuMorph = ({children, size, style}) => {
     return (
-      <TopShadow>
-        <BottomShadow>
+      <View style={styles.topShadow}>
+        <View style={styles.bottomShadow}>
           <View
             style={[
               styles.inner,
@@ -38,12 +38,11 @@ export default function Home() {
                 height: size || 40,
                 borderRadius: size / 2 || 40 / 2,
               },
-              style,
             ]}>
             {children}
           </View>
-        </BottomShadow>
-      </TopShadow>
+        </View>
+      </View>
     );
   };
 
@@ -93,7 +92,7 @@ export default function Home() {
               <Icon name="banckward" size={20} color={gray} />
             </NeuMorph>
             <NeuMorph size={80} style={{backgroundColor: '#8AAAFF'}}>
-              <Icon name="caretright" size={20} color="#FFF" />
+              <Icon name="caretright" size={20} color="#8AAAFF" />
             </NeuMorph>
             <NeuMorph size={75}>
               <Icon name="forward" size={20} color={gray} />
@@ -112,5 +111,23 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     borderColor: '#E2ECFD',
     borderWidth: 1,
+  },
+  topShadow: {
+    shadowOffset: {
+      width: -6,
+      height: -6,
+    },
+    shadowOpacity: 1,
+    shadowRadius: 6,
+    shadowColor: '#fbffff',
+  },
+  bottomShadow: {
+    shadowOffset: {
+      width: 6,
+      height: 6,
+    },
+    shadowOpacity: 1,
+    shadowRadius: 6,
+    shadowColor: '#b7c4dd',
   },
 });
