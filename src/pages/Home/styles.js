@@ -26,4 +26,12 @@ export const TopShadow = styled.View`
   shadow-radius: 6px;
   shadow-color: #fbffff;
 `;
-export const BottomShadow = styled.View``;
+export const BottomShadow = styled.View`
+  shadow-offset: {
+    width: 6px;
+    height: 6px;
+  }
+  shadow-opacity: 1px;
+  shadow-radius: 6px;
+  shadow-color: #b7c4dd;
+`;
