@@ -71,7 +71,7 @@ export const SongTextMusic = styled.Text`
 
 export const TrackContainer = styled.View`
   margin-top: 32px;
-  margin-bottom: 64px;
+  margin-bottom: 52px;
 `;
 export const TrackTimer = styled.View`
   flex-direction: row;
@@ -82,4 +82,9 @@ export const TextTime = styled.Text`
   font-size: 10px;
   color: gray;
   font-weight: 700;
+`;
+
+export const ContainerControls = styled.View`
+  flex-direction: row;
+  justify-content: space-around;
 `;

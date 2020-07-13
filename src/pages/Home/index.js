@@ -16,9 +16,12 @@ import {
   TrackContainer,
   TrackTimer,
   TextTime,
+  ContainerControls,
 } from './styles';
 import Icon from 'react-native-vector-icons/AntDesign';
+import IconIcon from 'react-native-vector-icons/Ionicons';
 Icon.loadFont();
+IconIcon.loadFont();
 
 const gray = '#91A18D';
 
@@ -74,7 +77,28 @@ export default function Home() {
               <TextTime>1:21</TextTime>
               <TextTime>4:02 </TextTime>
             </TrackTimer>
+            <Slider
+              minimumValue={0}
+              maximumValue={1}
+              minimumTrackTintColor="#8AAFFF"
+              maximumTrackTintColor="#DAE6F4"
+              thumbTintColor="#7b9bff"
+              style={{
+                marginTop: 32,
+              }}
+            />
           </TrackContainer>
+          <ContainerControls>
+            <NeuMorph size={75}>
+              <Icon name="banckward" size={20} color={gray} />
+            </NeuMorph>
+            <NeuMorph size={80} style={{backgroundColor: '#8AAAFF'}}>
+              <Icon name="caretright" size={20} color="#FFF" />
+            </NeuMorph>
+            <NeuMorph size={75}>
+              <Icon name="forward" size={20} color={gray} />
+            </NeuMorph>
+          </ContainerControls>
         </ContainerSpacing>
       </SafeArea>
     </Container>
