@@ -1,6 +1,4 @@
-## Backend - NodeJS - Challenge 1
-
-<p align="center"> Neuromorphism </p>
+## UI - Neuromorphism
 
 <hr>
 
