@@ -1,4 +1,4 @@
-## UI - Neuromorphism
+## UI - Neumorphism
 
 <hr>
 
