@@ -30,7 +30,7 @@ In addition, another bet by Neumorphism is the use of cards. That is, it is a bo
 
 <br />
 
-![Example](example.png 'Example of Neumorphism')
+![Example](result.png 'Example of Neumorphism')
 
 ## License
 
